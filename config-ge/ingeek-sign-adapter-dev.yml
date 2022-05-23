@@ -1,0 +1,31 @@
+SIGN_SERVER_IP: sh.syan.com.cn
+SVS_PORT: 9188
+PCS_PORT: 9178
+#SIGN_CERT_DN: CN=SGMTest,OU=\u6280\u672F\u90E8,O=Syan,L=\u5357\u4EAC\u5E02,S=\u6C5F\u82CF\u7701,2.5.4.45.17=E5765CAD827104A3ECEE5A47
+SIGN_CERT_DN: CN=SGMCenter,O=SGM,L=\u4E0A\u6D77,ST=\u4E0A\u6D77,C=CN
+SIGN_CERT_PWD: 1234
+SIGN_KEY_ID: 60931b5fbfb38e5bacd19c5b1fd47a8d
+
+#数据库类型
+JDBC_TYPE: oracle
+
+db: 
+  url: "jdbc:oracle:thin:@10.80.20.30:1521:xe"
+  username: ingeek
+  password: ingeek2017
+  filters: "stat,log4j"
+  maxActive: 20
+  initialSize: 1
+  maxWait: 60000
+  minIdle: 10
+  timeBetweenEvictionRunsMillis: 60000
+  minEvictableIdleTimeMillis: 300000
+  validationQuery: SELECT 1 FROM DUAL
+  #validationQuery: SELECT 1
+  testWhileIdle: true
+  testOnBorrow: false
+  testOnReturn: false
+  maxOpenPreparedStatements: 20
+  removeAbandoned: false
+  removeAbandonedTimeout: 1800
+  logAbandoned: true

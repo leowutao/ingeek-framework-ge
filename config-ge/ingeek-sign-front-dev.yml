@@ -1,0 +1,3 @@
+sign.adapter.feign.name: ingeek-sign-adapter
+
+sign.koal.adapter.feign.name: ingeek-sign-koal-adapter

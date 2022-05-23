@@ -1,0 +1,13 @@
+managed-kuber-services:
+  service: 
+       - name: ingeek-cert-scep 
+         image: ingeek.io:8888/iov/shge/ingeek-cert-scep 
+         version: vbeta-1.0
+       - name: ingeek-sign-front
+         image: ingeek.io:8888/iov/shge/ingeek-sign-front
+         version: vbeta-1.1 
+       - name: ingeek-device
+         image: ingeek.io:8888/iov/shge/ingeek-device
+         version: vbeta-1.1 
+         
+kuber.master.url: http://172.31.17.95:8080/

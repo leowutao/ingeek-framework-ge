@@ -1,0 +1,7 @@
+syan_scep_api: http://sh.syan.com.cn:8020/sgmx/pkiclient.exe
+sgm_cert_api: http://10.203.102.75:8087/vehicle-service/api/devicemgt/createVehicle
+
+db_driverClassName: "oracle.jdbc.driver.OracleDriver"
+db_url: "jdbc:oracle:thin:@10.80.20.30:1521/qa060"
+db_username: ingeek
+db_password: ingeek2017
